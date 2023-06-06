@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 const Home = (props) => {
   return (
     <>
-        <section>
+        <section className="pt-5">
           <div className="row mt-5 align-items-center">
             <div className="col-md">
               <img src={LeaftImg2}/>
@@ -26,27 +26,6 @@ const Home = (props) => {
           </div>
         </section>
         
-        <section className="text-center mt-5">
-          <div className=" row gap-3 item_container align-items-center">
-            <div className="col-lg">
-              <h4><span><i className="fa-sharp fa-solid fa-truck-fast"></i></span> Fast Delivery</h4>
-                <p>Quick and hassle-free</p>
-            </div>
-            <div className="col-lg">
-              <h4><span><i className="fa-solid fa-stamp"></i></span> Certified Organic</h4>
-                <p>100% Guarantee</p>
-            </div>
-            <div className="col-lg">
-              <h4><span><i className="fa-solid fa-comment-dots"></i></span>Available 24/7</h4>
-                <p>Contact us anytime</p>
-            </div>
-            <div className="col-lg">
-              <h4><span><i className="fa-solid fa-recycle"></i></span> Easy Returns</h4>
-                <p>No Questions Asked</p>
-            </div>
-          </div>
-        </section>
-
         <section className="text-center mt-5 mb-5">
           <div className="pt-5">
             <h1 className="darkGreen fw-bold">Best Selling Products</h1>
@@ -197,6 +176,31 @@ const Home = (props) => {
                 </div>
               ))}
             </div>
+        </section>
+
+        <section className="text-center my-5">
+          <div className=" row gap-3 item_container align-items-center">
+            <div className="col-lg">
+              <h4><span><i className="fa-sharp fa-solid fa-truck-fast"></i></span> Fast Delivery</h4>
+                <p>Quick and hassle-free</p>
+                  <img src={LeaftImg}/>
+            </div>
+            <div className="col-lg">
+              <h4><span><i className="fa-solid fa-stamp"></i></span> Certified Organic</h4>
+                <p>100% Guarantee</p>
+                  <img src={LeaftImg2}/>
+            </div>
+            <div className="col-lg">
+              <h4><span><i className="fa-solid fa-comment-dots"></i></span>Available 24/7</h4>
+                <p>Contact us anytime</p>
+                  <img src={LeaftImg}/>
+            </div>
+            <div className="col-lg">
+              <h4><span><i className="fa-solid fa-recycle"></i></span> Easy Returns</h4>
+                <p>No Questions Asked</p>
+                  <img src={LeaftImg2}/>
+            </div>
+          </div>
         </section>
     </>
   )

@@ -23,25 +23,6 @@
         color: rgb(223, 223, 17);
     }
 
-/*  */
-    .item_container{
-        /* background-color: var(--bg_lightGreen); */
-        padding: 30px;
-    }
-    .item_container div{
-        border-top-left-radius: 80px;
-        border-bottom-right-radius: 80px;
-        background-color: var(--bg_darkGreen);
-        height: 10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* color: var(--text_green); */
-        color: white;
-        /* border: 2px solid var(--bg_darkGreen); */
-    }
-
 /* custom btn */
     .custom_btn{
         background-color: transparent;
@@ -95,7 +76,8 @@
     }
     .custom_cards{
         background-color: var(--card_bg);
-        box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2); */
+        filter:drop-shadow(0 1px 5px rgba(0, 0, 0, 0.3));
         min-width: 16rem;
         max-width: 16rem;
         max-height: 22rem;
@@ -105,7 +87,8 @@
         transition: box-shadow .1s;
     }
     .custom_cards:hover{
-        box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.2); */
+        filter:drop-shadow(0 1px 7px rgba(0, 0, 0, 0.3));
     }
     @media(max-width:767px){
         .customcard_container{
@@ -394,7 +377,8 @@
         background-color: white;
         padding: 15px;
         font-size: 14px;
-        box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.2); */
+        filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -430,6 +414,26 @@
     .profileContainer img{
         width: 3rem;
     }
+/*  */
+.item_container{
+    background-color: var(--bg_lightGreen);
+    padding: 30px;
+}
+.item_container div{
+    background-color: var(--bg_lightGreen);
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text_green);
+    filter:drop-shadow(0 1px 2px);
+    transition: filter .2s;
+}
+.item_container div:hover{
+    filter:drop-shadow(0 1px 5px);
+}
+
 
 /* footer */
     footer{
