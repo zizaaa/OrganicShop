@@ -6,7 +6,7 @@ import HeroImg from "../assets/organic-products-hero.png"
 import { IoCart } from "react-icons/io5"
 import PropTypes from 'prop-types';
 
-const Home = ({products,shopReviews}) => {
+const Home = (props) => {
   return (
     <>
         <section>
@@ -26,6 +26,27 @@ const Home = ({products,shopReviews}) => {
           </div>
         </section>
         
+        <section className="text-center mt-5">
+          <div className=" row gap-3 item_container align-items-center">
+            <div className="col-lg">
+              <h4><span><i className="fa-sharp fa-solid fa-truck-fast"></i></span> Fast Delivery</h4>
+                <p>Quick and hassle-free</p>
+            </div>
+            <div className="col-lg">
+              <h4><span><i className="fa-solid fa-stamp"></i></span> Certified Organic</h4>
+                <p>100% Guarantee</p>
+            </div>
+            <div className="col-lg">
+              <h4><span><i className="fa-solid fa-comment-dots"></i></span>Available 24/7</h4>
+                <p>Contact us anytime</p>
+            </div>
+            <div className="col-lg">
+              <h4><span><i className="fa-solid fa-recycle"></i></span> Easy Returns</h4>
+                <p>No Questions Asked</p>
+            </div>
+          </div>
+        </section>
+
         <section className="text-center mt-5 mb-5">
           <div className="pt-5">
             <h1 className="darkGreen fw-bold">Best Selling Products</h1>
@@ -35,7 +56,7 @@ const Home = ({products,shopReviews}) => {
             </div>
           </div>
             <div className="gap-3 mt-5 customcard_container">
-              {products.map((product)=>(
+              {props.products.map((product)=>(
                   (product).bestSell === true ? (
                     <div className="custom_cards" key={product.name}>
                     {product.sale === true ? (<div className="saleBanner" id="flag">Sale</div>) : null}
@@ -107,7 +128,7 @@ const Home = ({products,shopReviews}) => {
                 </div>
             </div>
             <div className="gap-3 mt-5 customcard_container">
-              {products.map((product)=>(
+              {props.products.map((product)=>(
                   (product).trending === true ? (
                     <div className="custom_cards" key={product.name}>
                     {product.sale === true ? (<div className="saleBanner" id="flag">Sale</div>) : null}
@@ -159,7 +180,7 @@ const Home = ({products,shopReviews}) => {
                 </div>
             </div>
             <div className="row gap-3 reviewContainer mt-5">
-              {shopReviews.map((reviews)=>(
+              {props.shopReviews.map((reviews)=>(
                 <div className="col-lg reviews" key={reviews.name}>
                   <span className="reviewRatings">
                     <i className="fa-solid fa-star color_yellow"></i>

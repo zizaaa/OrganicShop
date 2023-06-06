@@ -227,7 +227,7 @@ let shopReviews = [
 ]
 
   return (
-    <main className="container">
+    <main>
         <Routes>
             <Route path="/" element={ <Layout /> }>
                 <Route index element={ <Home products={products} shopReviews={shopReviews}/> }/>
