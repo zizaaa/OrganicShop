@@ -122,9 +122,6 @@ const AllProducts = (props) => {
             }
           </div>
           <div className='buttonsContainer'>
-              {/* <span>{currentPage}</span> / <span>{totalPages}</span>
-              <button type='button' className='prevBtn' disabled={currentPage === 1} onClick={goToPreviousPage}></button>
-              <button type='button' className='nextBtn' disabled={currentPage === totalPages} onClick={goToNextPage}></button> */}
                       <button className='prevBtn' onClick={goToPreviousPage} disabled={currentPage === 1}>
                       <i className="fa-solid fa-chevron-left"></i>
                       </button>

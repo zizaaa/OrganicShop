@@ -203,81 +203,6 @@ function App() {
         bestSell:false,
         trending:false,
     },
-    {
-        imgUrl:`${freshSoursopJuice}`,
-        id: 12,
-        category:"Juice",
-        name:"Fresh Soursop Juiceeewwwe",
-        ratings: 5,
-        soldProducts: 300000,
-        price:250,
-        salePrice: null,
-        location:"Pili, Camarines Sur",
-        stock:100,
-        sale:false,
-        bestSell:false,
-        trending:false,
-    },
-    {
-        imgUrl:`${freshSoursopJuice}`,
-        id: 12,
-        category:"Juice",
-        name:"Fresh Soursop Juicewe",
-        ratings: 5,
-        soldProducts: 300000,
-        price:250,
-        salePrice: null,
-        location:"Pili, Camarines Sur",
-        stock:100,
-        sale:false,
-        bestSell:false,
-        trending:false,
-    },
-    {
-        imgUrl:`${freshSoursopJuice}`,
-        id: 12,
-        category:"Juice",
-        name:"Fresh Soursop Juiceeewe",
-        ratings: 5,
-        soldProducts: 300000,
-        price:250,
-        salePrice: null,
-        location:"Pili, Camarines Sur",
-        stock:100,
-        sale:false,
-        bestSell:false,
-        trending:false,
-    },
-    {
-        imgUrl:`${freshSoursopJuice}`,
-        id: 12,
-        category:"Juice",
-        name:"Fresh Soursop Juicee",
-        ratings: 5,
-        soldProducts: 300000,
-        price:250,
-        salePrice: null,
-        location:"Pili, Camarines Sur",
-        stock:100,
-        sale:false,
-        bestSell:false,
-        trending:false,
-    },
-    {
-        imgUrl:`${freshSoursopJuice}`,
-        id: 12,
-        category:"Juice",
-        name:"Fresh Soursop Juiceeeee",
-        ratings: 5,
-        soldProducts: 300000,
-        price:250,
-        salePrice: null,
-        location:"Pili, Camarines Sur",
-        stock:100,
-        sale:false,
-        bestSell:false,
-        trending:false,
-    },
 ];
 
 let shopReviews = [
@@ -307,8 +232,8 @@ let shopReviews = [
             <Route path="/" element={ <Layout /> }>
                 <Route index element={ <Home products={products} shopReviews={shopReviews}/> }/>
                 <Route path="/allproducts" element={ <AllProducts products={products}/> }/>
-                <Route path="/groceries" element={ <Groceries /> }/>
-                <Route path="/juice" element={ <Juice /> }/>
+                <Route path="/groceries" element={ <Groceries  products={products}/> }/>
+                <Route path="/juice" element={ <Juice  products={products}/> }/>
                 <Route path="/about" element={ <About /> }/>
                 <Route path="/contact" element={ <Contact /> }/>
             </Route>

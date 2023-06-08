@@ -52,6 +52,10 @@
     .dropdown_custom a{
         text-decoration: none;
     }
+    .dropdown_custom a:hover{
+        color: var(--text_green);
+        text-decoration: none;
+    }
     .nav_cart .nav_cart_container{
         position: relative;
     }
@@ -460,7 +464,6 @@
     .right-container{
         display: flex;
         flex-direction: column;
-        flex: 1;
     }
     .right-container .sortingContainer{
         display: flex;
@@ -468,7 +471,10 @@
         justify-content: space-evenly;
         gap: 10px;
         background-color: var(--bg_lightGreen);
-        padding: 10px;
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-left: 27px;
+        margin-right: 27px;
     }
 
     .sortDiv{
@@ -540,7 +546,6 @@
         flex-wrap: wrap;
         width: 100%;
         gap: 10px;
-        padding-top: 20px;
     }
     @media(max-width:592px){
         .right-container .sortedProductContainer{
